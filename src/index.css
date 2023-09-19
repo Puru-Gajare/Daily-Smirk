@@ -1,4 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&family=Raleway:wght@100;300;400&display=swap');
+
+:root {
+    --panel-color: hsla(252, 0%, 83%, 1);
+    /* --panel-color: hsl(0, 0%, 15%); */
+    --panel-text-color: black;
+    /* --panel-text-color: white; */
+}
+
+.h3-titles {
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
 #placeholder {
     margin-bottom: 60px;
     color: blue;
@@ -54,25 +70,92 @@
     margin-right: 2em;
 }
 
-
-
-#diffs-h5 {
-    margin-top: 3em;
-    font-weight: 300;
+.screenshot > h6 {
     font-family: 'Raleway', sans-serif;
-    font-size: 2.5em;
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
 }
 
-#diffs-list {
-    margin-left: 2em;
+#description {
+    margin-top: 5em;
+}
+
+#description > p{
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
     font-size: 1.5em;
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
 }
+
+.diffs-title {
+    margin-top: 50px;
+}
+
+#diffs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.diffs-panel {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px 0 var(--panel-color);
+    margin: 30px;
+    padding: 30px;
+    background-color: var(--panel-color);
+}
+
+.diffs-panel > h4 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: var(--panel-text-color);
+}
+
+.diffs-panel > p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: var(--panel-text-color);
+}
+
+.feedback-title {
+    margin-top: 50px;
+}
+
+#student-feedback {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.feedback-panel {
+    width: 500px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px 0 var(--panel-color);
+    margin: 30px;
+    padding: 30px;
+    background-color: var(--panel-color);
+}
+
+.feedback-panel > h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: var(--panel-text-color);
+}
+
+.feedback-panel > h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: var(--panel-text-color);
+}
+
+.feedback-panel > h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: var(--panel-text-color);
+}
+
 
 @keyframes fadeIn {
     from {
@@ -81,4 +164,19 @@
     to {
         opacity: 1;
     }
+}
+
+@media (max-width: 720px) {
+    #img-col {
+        display: none;
+    }
+
+    #screenshots {
+        justify-content: center;
+    }
+
+    #diffs { 
+        justify-content: center;
+    }
+
 }
