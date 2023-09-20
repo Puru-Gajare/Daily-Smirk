@@ -2,9 +2,7 @@
 
 :root {
     --panel-color: hsla(252, 0%, 83%, 1);
-    /* --panel-color: hsl(0, 0%, 15%); */
     --panel-text-color: black;
-    /* --panel-text-color: white; */
 }
 
 .h3-titles {
