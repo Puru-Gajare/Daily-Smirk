@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&family=Raleway:wght@100;300;400&display=swap');
+
+:root {
+    --panel-color: hsla(252, 0%, 83%, 1);
+    /* --panel-color: hsl(0, 0%, 15%); */
+    --panel-text-color: black;
+    /* --panel-text-color: white; */
+}
+
+#placeholder {
+    margin-bottom: 60px;
+    color: blue;
+}
+
+#title-h1 {
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    font-size: 64px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+#resources {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+
+.resource-panel {
+    width: 300px;
+    height: 225px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px 0 grey;
+    padding: 30px;
+    background-color: var(--panel-color);
+}
+
+.resource-panel > a {
+    text-decoration: none;
+}
+
+.resource-panel > a > h4{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: var(--panel-text-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.resource-panel > h6 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: var(--panel-text-color);
+}
+
+
+.resource-panel:hover {
+    background-color: hsla(0, 0%, 75%, 1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .resource-panel {
+        min-height: 300px;
+    }
+}
