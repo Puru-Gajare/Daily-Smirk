@@ -7,15 +7,19 @@
 
 #placeholder {
     margin-bottom: 60px;
-    color: blue;
+}
+
+#everything {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    min-height: 81vh;
 }
 
 #title-h1 {
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
     font-size: 64px;
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
+    text-align: center;
 }
 
 
@@ -24,7 +28,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    min-height: 70vh;
 }
 
 
