@@ -17,9 +17,9 @@ navbar.innerHTML = `
         </button>
         <div id="navbar-menu" aria-labelledby="navbar-toggle">
         <ul class="navbar-links">
-            <li class="navbar-item"><a class="navbar-link" href="/about">About</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="/blog">People</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="/careers">Resources</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="index.html">About</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="people.html">People</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="resources.html">Resources</a></li>
         </ul>
         </div>
         </nav>`;
