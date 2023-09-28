@@ -6,7 +6,7 @@ navbar.innerHTML = `
         <nav class="navbar-container container">
         <a href="/" class="home-link">
         <div class="logo-holder">
-            <img class="navbar-logo" src="../imgs/logo.png">
+            <img class="navbar-logo" src="imgs/logo.png">
         </div>
         The Daily Smirk
         </a>
