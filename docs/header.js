@@ -4,7 +4,7 @@ const navbar = document.createElement("header");
 navbar.setAttribute("id", "navbar");
 navbar.innerHTML = `
         <nav class="navbar-container container">
-        <a href="/" class="home-link">
+        <a href="index.html" class="home-link">
         <div class="logo-holder">
             <img class="navbar-logo" src="imgs/logo.png">
         </div>
