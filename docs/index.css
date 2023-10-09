@@ -16,6 +16,7 @@ body {
     font-size: 2.5em;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
+    text-align: center;
 }
 
 #placeholder {
@@ -128,6 +129,23 @@ body {
     color: var(--panel-text-color);
 }
 
+#calendar-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#calendar-screen-img {
+    max-width: 1000px;
+}
+
+#calendar-screen > p {
+    font-family: 'Raleway', sans-serif;
+}
+
+
 .feedback-title {
     margin-top: 50px;
 }
@@ -167,6 +185,8 @@ body {
     font-size: 16px;
     color: var(--panel-text-color);
 }
+
+
 
 
 @keyframes fadeIn {
