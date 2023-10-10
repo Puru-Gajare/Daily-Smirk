@@ -84,11 +84,28 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+#calendar-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#calendar-screen-img {
+    max-width: 1000px;
+}
+
+#calendar-screen > p {
+    font-family: 'Raleway', sans-serif;
+}
+
 #description {
     margin-top: 5em;
 }
 
 #description > p{
+    text-align: center;
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
     font-size: 1.5em;
@@ -128,23 +145,6 @@ body {
     font-size: 16px;
     color: var(--panel-text-color);
 }
-
-#calendar-screen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-}
-
-#calendar-screen-img {
-    max-width: 1000px;
-}
-
-#calendar-screen > p {
-    font-family: 'Raleway', sans-serif;
-}
-
 
 .feedback-title {
     margin-top: 50px;
@@ -199,15 +199,8 @@ body {
 }
 
 
-@media (max-width: 1470px) {
-    #screenshots {
-        justify-content: center;
-    }
-
-    #diffs { 
-        justify-content: center;
-    }
-    #student-feedback {
-        justify-content: center;
+@media (max-width: 1175px) {
+    #calendar-screen {
+        display: none;
     }
 }
