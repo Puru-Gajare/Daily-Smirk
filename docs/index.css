@@ -199,8 +199,30 @@ body {
 }
 
 
+@media (max-width: 480px) {
+    .screenshot > img {
+        max-width: 20em;
+        margin-right: 0;
+    }
+    #img-col {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    #img-col > img {
+        max-width: 150px;
+        margin: 20px 0px 20px 0px;
+    }
+}
+
+
 @media (max-width: 1175px) {
     #calendar-screen {
         display: none;
     }
+
 }
