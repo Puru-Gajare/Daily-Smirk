@@ -20,6 +20,19 @@
         <meta name="twitter:description"
             content="The Daily Smirk is an innovative new system of peer evaluation with design goals of simplicity and daily assessment." />
         <title>Instructors | The Daily Smirk</title> 
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // var h6Element = document.querySelector("h6");
+                // h6Element.classList.add("underline");
+                var underlineElements = document.querySelectorAll(".underline");
+
+                underlineElements.forEach(function(element) {
+                    element.classList.add("animate");
+                });
+            });
+            
+        </script>
     </head>
 
     <body>
@@ -40,7 +53,7 @@
                     </div>
 
                     <div class="paragraph margin-top-50">
-                        <h6>The Daily Smirk</h6> <p>is a revolutionary system for instructors to easily evaluate individual contributions to group projects.</p> 
+                        <h6><a href="index.html" class="underline">The Daily Smirk</a></h6> <p>is a revolutionary system for instructors to easily evaluate individual contributions to group projects.</p> 
                     </div>
                     
                     <div class="paragraph margin-top-50">
@@ -63,7 +76,7 @@
                     </div>
 
                     <div class="paragraph margin-top-50 contact-us">
-                        <p>Want to get in contact with us? Check out our <a href="people.html">people</a> page.</p> 
+                        <p>Want to get in contact with us? Check out our <a href="people.html" class="underline">people</a> page.</p> 
                     </div>
 
                 </div>

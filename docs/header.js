@@ -19,7 +19,9 @@ navbar.innerHTML = `
         <ul class="navbar-links">
             <li class="navbar-item"><a class="navbar-link" href="index.html">About</a></li>
             <li class="navbar-item"><a class="navbar-link" href="people.html">People</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="instructor.html">Instructors</a></li>
             <li class="navbar-item"><a class="navbar-link" href="resources.html">Resources</a></li>
+            
         </ul>
         </div>
         </nav>`;

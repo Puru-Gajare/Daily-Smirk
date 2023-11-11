@@ -15,10 +15,37 @@ body {
     animation: fadeIn 1s ease-in-out forwards;
 }
 
+/* prevents <a> from showing up as blue */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.underline {
+    display: inline;
+    position: relative;
+}
+
+.underline::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 1.5s;
+}
+
+.underline.animate::after {
+    width: 100%;
+}
+
 #title-h1 {
     font-weight: 400;
     font-family: 'Raleway', sans-serif;
-    font-size:112px;
+    font-size: 112px;
     text-align: center;
 }
 
@@ -51,7 +78,6 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 2em;
 }
-
 
 .paragraph > p {
     display: inline;
@@ -126,5 +152,14 @@ body {
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes underlineAnimation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
     }
 }
