@@ -48,6 +48,7 @@ body {
     --bs-accordion-active-color: black;
     --bs-accordion-bg: var(--panel-color);
     --bs-accordion-btn-focus-border-color: unset;
+    --bs-accordion-body-padding-y: 30px;
     margin-bottom: 200px;
 }
 

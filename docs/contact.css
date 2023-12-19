@@ -10,6 +10,10 @@ body {
     animation: fadeIn 1s ease-in-out forwards;
 }
 
+#everything {
+    min-height: 81vh;
+}
+
 #placeholder {
     margin-bottom: 60px;
     color: blue;
@@ -30,6 +34,25 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5em;
 }
+
+#google-form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#contact-us {
+    display: none;
+} 
+
+@media (max-width: 650px) {
+    #google-form {
+        display: none;
+    }
+    #contact-us {
+        display: block;
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
