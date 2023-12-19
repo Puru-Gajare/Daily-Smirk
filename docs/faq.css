@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&family=Raleway:wght@100;300;400&display=swap');
+
+:root {
+    --panel-color: hsla(252, 0%, 93%, 1);
+    --panel-active-color: hsla(252, 0%, 83%, 1);
+    --panel-text-color: black;
+}
+
+#everything {
+    min-height: 81vh;
+}
+
+body {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+#placeholder {
+    margin-bottom: 60px;
+    color: blue;
+}
+
+#title-h1 {
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    font-size: 52px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    text-align: center;
+}
+
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+.paragraph {
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    text-wrap: wrap;
+    margin-top: 30px;
+}
+
+.accordion {
+    --bs-accordion-btn-bg: var(--panel-color);
+    --bs-accordion-active-bg: var(--panel-active-color);
+    --bs-accordion-active-color: black;
+    --bs-accordion-bg: var(--panel-color);
+    --bs-accordion-btn-focus-border-color: unset;
+    margin-bottom: 200px;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+
+
+.accordion-button {
+    font: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: var(--panel-text-color);
+
+}
+
+.accordion-body > p {
+    font: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: var(--panel-text-color)
+}
+
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

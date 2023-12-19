@@ -5,6 +5,10 @@
     --panel-text-color: black;
 }
 
+#everything {
+    min-height: 81vh;
+}
+
 #placeholder {
     margin-bottom: 60px;
     color: blue;
@@ -13,12 +17,13 @@
 body {
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
+    background-color: rgba(0, 0, 0, 0.914);
 }
 
 /* prevents <a> from showing up as blue */
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .underline {
@@ -31,7 +36,7 @@ a {
     display: block;
     width: 0;
     height: 2px;
-    background-color: #000;
+    background-color: white;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -42,25 +47,15 @@ a {
     width: 100%;
 }
 
+h1, h6, h4, p {
+    color: white;
+}
+
 #title-h1 {
     font-weight: 400;
     font-family: 'Raleway', sans-serif;
     font-size: 112px;
     text-align: center;
-}
-
-#img-col {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#img-col > img {
-    max-width: 150px;
-    margin: 20px 0px 20px 0px;
 }
 
 .paragraph {
@@ -76,7 +71,7 @@ a {
     text-align: center;
     font-weight: 600;
     font-family: 'Raleway', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .paragraph > p {
@@ -84,7 +79,7 @@ a {
     text-align: center;
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     text-wrap: wrap;
 }
 
@@ -109,25 +104,18 @@ a {
     text-wrap: nowrap;
 }
 
-.contact-us {
+#contact-us {
     margin-bottom: 50px;
+    display: none;
 }
 
-.contact-us > a {
+#contact-us > a {
     color: blue;
     text-decoration: underline;
 }
 
 
 
-
-
-
-@media (max-width: 950px) {
-    #dashboard-screenshot {
-        display: none;
-    }
-}
 
 @media (max-width: 480px) {
     #img-col {
@@ -143,7 +131,34 @@ a {
         max-width: 150px;
         margin: 20px 0px 20px 0px;
     }
+    #google-form {
+        display: none;
+    }
 }
+
+@media (max-width: 580px) {
+    #title-h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    #google-form {
+        display: none;
+    }
+    #contact-us {
+        display: block;
+    }
+}
+
+
+@media (max-width: 950px) {
+    #dashboard-screenshot {
+        display: none;
+    }
+}
+
+
 
 
 @keyframes fadeIn {

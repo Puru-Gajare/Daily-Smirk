@@ -18,8 +18,8 @@ navbar.innerHTML = `
         <div id="navbar-menu" aria-labelledby="navbar-toggle">
         <ul class="navbar-links">
             <li class="navbar-item"><a class="navbar-link" href="index.html">About</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="people.html">People</a></li>
             <li class="navbar-item"><a class="navbar-link" href="instructor.html">Instructors</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="faq.html">FAQ</a></li>
             <li class="navbar-item"><a class="navbar-link" href="resources.html">Resources</a></li>
             
         </ul>

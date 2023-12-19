@@ -13,9 +13,10 @@
 #title-h1 {
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
-    font-size: 64px;
+    font-size: 112x;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
+    text-align: center;
 }
 
 @keyframes fadeIn {
