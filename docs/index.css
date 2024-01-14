@@ -78,6 +78,7 @@ body {
     flex-direction: row;
     margin-top: 5em;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .screenshot {
@@ -233,22 +234,5 @@ body {
     #img-col > img {
         max-width: 150px;
         margin: 20px 0px 20px 0px;
-    }
-}
-
-
-@media (max-width: 1175px) {
-    #calendar-screen {
-        display: none;
-    }
-
-}
-
-@media (max-width: 950px) {
-    #google-form {
-        display: none;
-    }
-    #contact-us {
-        display: block;
     }
 }

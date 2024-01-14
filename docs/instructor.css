@@ -17,13 +17,6 @@
 body {
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
-    background-color: rgba(0, 0, 0, 0.914);
-}
-
-/* prevents <a> from showing up as blue */
-a {
-    text-decoration: none;
-    color: white;
 }
 
 .underline {
@@ -36,7 +29,7 @@ a {
     display: block;
     width: 0;
     height: 2px;
-    background-color: white;
+    background-color: black;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -47,9 +40,6 @@ a {
     width: 100%;
 }
 
-h1, h6, h4, p {
-    color: white;
-}
 
 #title-h1 {
     font-weight: 400;
@@ -104,16 +94,9 @@ h1, h6, h4, p {
     text-wrap: nowrap;
 }
 
-#contact-us {
+#last-para {
     margin-bottom: 50px;
-    display: none;
 }
-
-#contact-us > a {
-    color: blue;
-    text-decoration: underline;
-}
-
 
 
 
@@ -142,14 +125,6 @@ h1, h6, h4, p {
     }
 }
 
-@media (max-width: 800px) {
-    #google-form {
-        display: none;
-    }
-    #contact-us {
-        display: block;
-    }
-}
 
 
 @media (max-width: 950px) {
