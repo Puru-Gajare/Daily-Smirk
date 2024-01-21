@@ -22,7 +22,6 @@ navbar.innerHTML = `
             <li class="navbar-item"><a class="navbar-link" href="faq.html">FAQ</a></li>
             <li class="navbar-item"><a class="navbar-link" href="resources.html">Resources</a></li>
             <li class="navbar-item"><a class="navbar-link" href="contact.html">Contact</a></li>
-            
         </ul>
         </div>
         </nav>`;

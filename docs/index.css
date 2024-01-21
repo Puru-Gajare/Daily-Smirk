@@ -206,6 +206,14 @@ body {
     text-decoration: underline;
 }
 
+a {
+    color: black;
+}
+
+.last-para {
+    margin-bottom: 40px;
+}
+
 
 @keyframes fadeIn {
     from {

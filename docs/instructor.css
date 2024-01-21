@@ -5,6 +5,11 @@
     --panel-text-color: black;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 #everything {
     min-height: 81vh;
 }
@@ -73,25 +78,36 @@ body {
     text-wrap: wrap;
 }
 
+.screenshots {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
 
-#dashboard-screenshot {
+.dashboard-screenshot {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin: 20px;
 }
 
-#dashboard-screenshot > img {
-    max-width: 60em;
+.dashboard-screenshot > img {
+    max-width: 50em;
 }
 
-#dashboard-screenshot > p {
+.dashboard-screenshot > p {
     margin-top: 20px;
     font-weight: 300;
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
     text-wrap: nowrap;
+}
+
+#individual-ss {
+    margin-top: 40px;
 }
 
 #last-para {
@@ -128,7 +144,7 @@ body {
 
 
 @media (max-width: 950px) {
-    #dashboard-screenshot {
+    .dashboard-screenshot {
         display: none;
     }
 }
